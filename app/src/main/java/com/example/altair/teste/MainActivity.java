@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-        Modelo modelo = new Modelo("Test");
+        ModeloPresenter modelo = new ModeloPresenter(new Modelo("Test"));
         binding.setTeste(modelo);
         binding.setHandlers(new OnClickButton());
     }
